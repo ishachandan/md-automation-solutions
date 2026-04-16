@@ -53,8 +53,8 @@ const generateSolutions = () => {
     const tech = technologies.slice(i % 5, (i % 5) + 4);
     
     solutions.push({
-      name: `${category} Solution ${i}`,
-      slug: `${category.toLowerCase().replace(/\s+/g, '-')}-solution-${i}`,
+      name: `${category}`,
+      slug: `${category.toLowerCase().replace(/\s+/g, '-')}-${i}`,
       category: category,
       industries: industry,
       description: `Comprehensive ${category.toLowerCase()} solution designed for ${industry[0].toLowerCase()} industry. This advanced system provides real-time monitoring, control, and optimization capabilities. Solution ${i} integrates seamlessly with existing infrastructure while offering scalability for future expansion. Our proven methodology ensures minimal downtime during implementation and maximum ROI.`,

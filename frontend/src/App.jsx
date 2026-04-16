@@ -8,6 +8,7 @@ import Footer from './components/layout/Footer'
 import Home from './pages/public/Home'
 import About from './pages/public/About'
 import Solutions from './pages/public/Solutions'
+import SolutionDetail from './pages/public/SolutionDetail'
 import CaseStudies from './pages/public/CaseStudies'
 import Products from './pages/public/Products'
 import Partners from './pages/public/Partners'
@@ -55,6 +56,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/solutions" element={<Solutions />} />
+                    <Route path="/solutions/:slug" element={<SolutionDetail />} />
                     <Route path="/case-studies" element={<CaseStudies />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/partners" element={<Partners />} />

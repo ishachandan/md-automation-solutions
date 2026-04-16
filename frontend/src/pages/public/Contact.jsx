@@ -83,7 +83,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                    <div className="text-gray-600">+91 (123) 456-7890</div>
+                    <div className="text-gray-600">+91 9422270059</div>
                   </div>
                 </div>
 
@@ -95,7 +95,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Email</div>
-                    <div className="text-gray-600">info@mdautomation.com</div>
+                    <div className="text-gray-600">nitinkhune@yahoo.com</div>
                   </div>
                 </div>
 
@@ -109,8 +109,8 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Address</div>
                     <div className="text-gray-600">
-                      123 Industrial Park<br />
-                      Mumbai, Maharashtra 400001<br />
+                      W214, MIDC Ambad, Nasik<br />
+                      Nashik, Maharashtra 422010<br />
                       India
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                     <div className="font-semibold text-gray-900 mb-1">Business Hours</div>
                     <div className="text-gray-600">
                       Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 1:00 PM
+                      Saturday & Sunday: Closed
                     </div>
                   </div>
                 </div>
