@@ -175,10 +175,6 @@ export default function Products() {
                         Datasheet
                       </a>
                     )}
-                    
-                    <Link to="/contact" className="w-full bg-black text-white py-2 rounded-full hover:bg-gray-800 transition-colors text-sm font-medium block text-center">
-                      Request Quote
-                    </Link>
                   </div>
                 ))}
               </div>
