@@ -40,13 +40,13 @@ Opens at: http://localhost:3000
 
 ## 🔌 API Integration
 
-Frontend connects to backend at: `http://localhost:5000`
+Frontend connects to backend at: `https://md-automation-solutions.onrender.com`
 
 Configured in `vite.config.js`:
 ```javascript
 proxy: {
   '/api': {
-    target: 'http://localhost:5000',
+    target: 'https://md-automation-solutions.onrender.com',
     changeOrigin: true
   }
 }
@@ -141,4 +141,4 @@ Check `FRONTEND_SETUP.md` for detailed setup instructions.
 
 ---
 
-**Ready for production! 🚀**
+**Ready for production deployment! 🚀**

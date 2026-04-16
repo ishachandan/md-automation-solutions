@@ -24,7 +24,7 @@ const ManageBlogPosts = () => {
 
   const fetchBlogPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/blog');
+      const response = await axios.get('https://md-automation-solutions.onrender.com/api/blog');
       setBlogPosts(response.data.data || []);
       setLoading(false);
     } catch (error) {
@@ -67,11 +67,11 @@ const ManageBlogPosts = () => {
 
     try {
       if (editingId) {
-        const response = await axios.put(`http://localhost:5000/api/blog/${editingId}`, payload, config);
+        const response = await axios.put(`https://md-automation-solutions.onrender.com/api/blog/${editingId}`, payload, config);
         console.log('Update response:', response.data);
         toast.success('Blog post updated successfully');
       } else {
-        const response = await axios.post('http://localhost:5000/api/blog', payload, config);
+        const response = await axios.post('https://md-automation-solutions.onrender.com/api/blog', payload, config);
         console.log('Create response:', response.data);
         toast.success('Blog post created successfully');
       }
@@ -106,7 +106,7 @@ const ManageBlogPosts = () => {
     const config = { headers: { Authorization: `Bearer ${token}` } };
 
     try {
-      await axios.delete(`http://localhost:5000/api/blog/${id}`, config);
+      await axios.delete(`https://md-automation-solutions.onrender.com/api/blog/${id}`, config);
       toast.success('Blog post deleted successfully');
       fetchBlogPosts();
     } catch (error) {

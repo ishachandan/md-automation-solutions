@@ -27,7 +27,7 @@ const ManageProducts = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://md-automation-solutions.onrender.com/api/products');
       setProducts(response.data.data || []);
       setLoading(false);
     } catch (error) {
@@ -86,11 +86,11 @@ const ManageProducts = () => {
 
     try {
       if (editingId) {
-        const response = await axios.put(`http://localhost:5000/api/products/${editingId}`, payload, config);
+        const response = await axios.put(`https://md-automation-solutions.onrender.com/api/products/${editingId}`, payload, config);
         console.log('Update response:', response.data);
         toast.success('Product updated successfully');
       } else {
-        const response = await axios.post('http://localhost:5000/api/products', payload, config);
+        const response = await axios.post('https://md-automation-solutions.onrender.com/api/products', payload, config);
         console.log('Create response:', response.data);
         toast.success('Product created successfully');
       }
@@ -136,7 +136,7 @@ const ManageProducts = () => {
     const config = { headers: { Authorization: `Bearer ${token}` } };
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, config);
+      await axios.delete(`https://md-automation-solutions.onrender.com/api/products/${id}`, config);
       toast.success('Product deleted successfully');
       fetchProducts();
     } catch (error) {

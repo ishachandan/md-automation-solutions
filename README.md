@@ -103,7 +103,7 @@ npm install
 Create `.env` file in frontend directory (optional for development):
 
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://md-automation-solutions.onrender.com/api
 ```
 
 ### 4. Create Admin User
@@ -139,7 +139,7 @@ This will populate your database with:
 cd backend
 npm run dev
 ```
-Server runs on `http://localhost:5000`
+Server runs on `https://md-automation-solutions.onrender.com`
 
 **Frontend** (Terminal 2):
 ```bash

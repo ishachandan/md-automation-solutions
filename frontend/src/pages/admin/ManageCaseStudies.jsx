@@ -25,7 +25,7 @@ const ManageCaseStudies = () => {
 
   const fetchCaseStudies = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/case-studies');
+      const response = await axios.get('https://md-automation-solutions.onrender.com/api/case-studies');
       setCaseStudies(response.data.data || []);
       setLoading(false);
     } catch (error) {
@@ -67,10 +67,10 @@ const ManageCaseStudies = () => {
 
     try {
       if (editingId) {
-        await axios.put(`http://localhost:5000/api/case-studies/${editingId}`, payload, config);
+        await axios.put(`https://md-automation-solutions.onrender.com/api/case-studies/${editingId}`, payload, config);
         toast.success('Case study updated successfully');
       } else {
-        await axios.post('http://localhost:5000/api/case-studies', payload, config);
+        await axios.post('https://md-automation-solutions.onrender.com/api/case-studies', payload, config);
         toast.success('Case study created successfully');
       }
       
@@ -105,7 +105,7 @@ const ManageCaseStudies = () => {
     const config = { headers: { Authorization: `Bearer ${token}` } };
 
     try {
-      await axios.delete(`http://localhost:5000/api/case-studies/${id}`, config);
+      await axios.delete(`https://md-automation-solutions.onrender.com/api/case-studies/${id}`, config);
       toast.success('Case study deleted successfully');
       fetchCaseStudies();
     } catch (error) {

@@ -17,7 +17,7 @@ const ManageEnquiries = () => {
     try {
       const token = localStorage.getItem('token');
       const config = { headers: { Authorization: `Bearer ${token}` } };
-      const response = await axios.get('http://localhost:5000/api/enquiries', config);
+      const response = await axios.get('https://md-automation-solutions.onrender.com/api/enquiries', config);
       setEnquiries(response.data.data || []);
       setLoading(false);
     } catch (error) {
@@ -33,7 +33,7 @@ const ManageEnquiries = () => {
       const config = { headers: { Authorization: `Bearer ${token}` } };
       
       await axios.put(
-        `http://localhost:5000/api/enquiries/${enquiryId}/status`,
+        `https://md-automation-solutions.onrender.com/api/enquiries/${enquiryId}/status`,
         { status: newStatus, notes },
         config
       );
@@ -41,7 +41,7 @@ const ManageEnquiries = () => {
       toast.success('Status updated successfully');
       fetchEnquiries();
       if (selectedEnquiry && selectedEnquiry._id === enquiryId) {
-        const updated = await axios.get(`http://localhost:5000/api/enquiries/${enquiryId}`, config);
+        const updated = await axios.get(`https://md-automation-solutions.onrender.com/api/enquiries/${enquiryId}`, config);
         setSelectedEnquiry(updated.data.data);
       }
     } catch (error) {
@@ -56,7 +56,7 @@ const ManageEnquiries = () => {
       const config = { headers: { Authorization: `Bearer ${token}` } };
 
       await axios.put(
-        `http://localhost:5000/api/enquiries/${enquiryId}`,
+        `https://md-automation-solutions.onrender.com/api/enquiries/${enquiryId}`,
         { quoteUrl },
         config
       );
@@ -64,7 +64,7 @@ const ManageEnquiries = () => {
       toast.success('Quote URL updated successfully');
       fetchEnquiries();
       if (selectedEnquiry && selectedEnquiry._id === enquiryId) {
-        const updated = await axios.get(`http://localhost:5000/api/enquiries/${enquiryId}`, config);
+        const updated = await axios.get(`https://md-automation-solutions.onrender.com/api/enquiries/${enquiryId}`, config);
         setSelectedEnquiry(updated.data.data);
       }
     } catch (error) {
@@ -77,7 +77,7 @@ const ManageEnquiries = () => {
     try {
       const token = localStorage.getItem('token');
       const config = { headers: { Authorization: `Bearer ${token}` } };
-      const response = await axios.get(`http://localhost:5000/api/enquiries/${enquiry._id}`, config);
+      const response = await axios.get(`https://md-automation-solutions.onrender.com/api/enquiries/${enquiry._id}`, config);
       setSelectedEnquiry(response.data.data);
       setShowDetails(true);
     } catch (error) {

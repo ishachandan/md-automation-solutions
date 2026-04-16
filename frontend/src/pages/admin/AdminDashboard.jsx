@@ -26,23 +26,23 @@ const AdminDashboard = () => {
       console.log('Fetching stats...');
 
       const [enquiries, solutions, caseStudies, products, blog] = await Promise.all([
-        axios.get('http://localhost:5000/api/enquiries', config).catch(err => {
+        axios.get('https://md-automation-solutions.onrender.com/api/enquiries', config).catch(err => {
           console.error('Enquiries fetch error:', err);
           return { data: { data: [] } };
         }),
-        axios.get('http://localhost:5000/api/solutions').catch(err => {
+        axios.get('https://md-automation-solutions.onrender.com/api/solutions').catch(err => {
           console.error('Solutions fetch error:', err);
           return { data: { data: [] } };
         }),
-        axios.get('http://localhost:5000/api/case-studies').catch(err => {
+        axios.get('https://md-automation-solutions.onrender.com/api/case-studies').catch(err => {
           console.error('Case studies fetch error:', err);
           return { data: { data: [] } };
         }),
-        axios.get('http://localhost:5000/api/products').catch(err => {
+        axios.get('https://md-automation-solutions.onrender.com/api/products').catch(err => {
           console.error('Products fetch error:', err);
           return { data: { data: [] } };
         }),
-        axios.get('http://localhost:5000/api/blog').catch(err => {
+        axios.get('https://md-automation-solutions.onrender.com/api/blog').catch(err => {
           console.error('Blog fetch error:', err);
           return { data: { data: [] } };
         }),
