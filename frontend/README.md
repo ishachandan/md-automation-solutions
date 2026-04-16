@@ -141,4 +141,4 @@ Check `FRONTEND_SETUP.md` for detailed setup instructions.
 
 ---
 
-**Ready for demo! 🚀**
+**Ready for production! 🚀**
