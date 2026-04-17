@@ -193,7 +193,7 @@ export default function SolutionDetail() {
                 <p className="text-primary-100 mb-6">
                   Get in touch with our experts to discuss how this solution can benefit your operations.
                 </p>
-                <Link to="/contact" className="btn-secondary w-full justify-center bg-white text-primary-600 hover:bg-gray-100">
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-white text-primary-600 hover:bg-gray-100 rounded-lg font-medium transition-colors">
                   Contact Us
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
