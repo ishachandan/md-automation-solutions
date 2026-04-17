@@ -56,14 +56,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">MD</span>
-            </div>
-            <div className="hidden md:block">
-              <div className="text-xl font-bold text-gray-900">MD Automation</div>
-              <div className="text-xs text-gray-500">Solutions Platform</div>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="MD Automation Solutions" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}

@@ -9,14 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-xl">MD</span>
-              </div>
-              <div>
-                <div className="text-lg font-bold text-white">MD Automation</div>
-                <div className="text-xs text-gray-400">Solutions Platform</div>
-              </div>
+            <div className="mb-4">
+              <img 
+                src="/logo.png" 
+                alt="MD Automation Solutions" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Leading provider of industrial automation solutions, empowering Connected Factories to excel in an Industry 4.0 world.
