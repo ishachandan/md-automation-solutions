@@ -109,7 +109,7 @@ export default function Solutions() {
                     {solution.category}
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{solution.name}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">{solution.name}</h3>
                   
                   <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                     {solution.description}

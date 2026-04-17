@@ -154,7 +154,7 @@ export default function Products() {
                     </div>
                     
                     <div className="text-sm text-primary-600 font-semibold mb-1">{product.brand}</div>
-                    <h3 className="font-bold text-gray-900 mb-2 line-clamp-2 min-h-[3rem]">{product.name}</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 min-h-[3rem]">{product.name}</h3>
                     
                     <div className="inline-block bg-gray-100 px-3 py-1 rounded-full text-xs text-gray-700 mb-3">
                       {product.category}

@@ -117,7 +117,7 @@ export default function CaseStudies() {
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2">{study.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">{study.title}</h3>
                   
                   <div className="text-sm text-gray-600 mb-3">
                     <span className="font-semibold">Client:</span> {study.clientName}
