@@ -23,9 +23,9 @@ app.use(cors({
     'http://localhost:3001', 
     'http://localhost:5173',
     'https://www.mdautomation.in/', 
-    'https://md-automation-solutions.onrender.com' 
-    process.env.FRONTEND_URL,
-    /\.vercel\.app$/ // Allow all Vercel preview deployments
+    'https://md-automation-solutions.onrender.com' ,
+    'https://md-automation-solutions.vercel.app/' , 
+    'https://mdautomation.in/'
   ].filter(Boolean),
   credentials: true
 }));
