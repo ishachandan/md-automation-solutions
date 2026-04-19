@@ -22,6 +22,7 @@ app.use(cors({
     'http://localhost:3000', 
     'http://localhost:3001', 
     'http://localhost:5173',
+    'https://www.mdautomation.in/',  
     process.env.FRONTEND_URL,
     /\.vercel\.app$/ // Allow all Vercel preview deployments
   ].filter(Boolean),
