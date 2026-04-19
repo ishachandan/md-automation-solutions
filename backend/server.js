@@ -22,10 +22,10 @@ app.use(cors({
     'http://localhost:3000', 
     'http://localhost:3001', 
     'http://localhost:5173',
-    'https://www.mdautomation.in/', 
-    'https://md-automation-solutions.onrender.com' ,
-    'https://md-automation-solutions.vercel.app/' , 
-    'https://mdautomation.in/'
+    'https://www.mdautomation.in',
+    'https://mdautomation.in',
+    'https://md-automation-solutions.onrender.com',
+    'https://md-automation-solutions.vercel.app'
   ].filter(Boolean),
   credentials: true
 }));
